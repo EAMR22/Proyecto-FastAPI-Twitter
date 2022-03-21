@@ -3,7 +3,7 @@
         "tweet_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
         "content": "This is the firts tweet in the history",
         "created_at": "2022-03-21 00:50:02.661624",
-        "updated_at": "None",
+        "updated_at": "2022-08-20 22:10:51.838000+00:00",
         "by": {
             "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
             "email": "esquias@example.com",
@@ -16,7 +16,7 @@
         "tweet_id": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
         "content": "Mi primer dia en twiter",
         "created_at": "2022-03-21 00:50:02.661624",
-        "updated_at": "None",
+        "updated_at": "2022-08-20 22:10:51.838000+00:00",
         "by": {
             "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
             "email": "alexandra@example.com",
@@ -29,7 +29,7 @@
         "tweet_id": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
         "content": "Hoy nevo en Honduras",
         "created_at": "2022-03-21 00:50:02.661624",
-        "updated_at": "None",
+        "updated_at": "2022-08-20 22:10:51.838000+00:00",
         "by": {
             "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
             "email": "luis@example.com",
