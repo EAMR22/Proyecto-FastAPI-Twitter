@@ -58,7 +58,7 @@ class Tweet(BaseModel):
         max_length=356
     )
     created_at: datetime = Field(default=datetime.now())
-    update_at: Optional[datetime] = Field(default=None)
+    updated_at: Optional[datetime] = Field(default=None)
     by: User = Field(...)
 
 # Path Operations
@@ -199,8 +199,35 @@ def home():
     summary="Post a tweet",
     tags=["Tweets"]
 )
-def post():
-    pass
+def post(tweet: Tweet = Body(...)):
+    """
+    Post a tweet
+
+    This path operation post a tweet in the app
+
+    Parameters:
+        - Request body parameter
+            - tweet: Tweet
+
+    Returns a json with the basic tweet information:
+        tweet_id: UUID 
+        content: str 
+        created_at: datetime 
+        updated_at: Optional[datetime] 
+        by: User 
+    """
+    with open("tweets.json", "r+", encoding="utf-8") as f:    # r+ significa que es de lectura y escritura el archivo.
+        results = json.loads(f.read())    # Con .loads transforma la cadena en diccionario.
+        tweet_dict = tweet.dict()
+        tweet_dict["tweet_id"] = str(tweet_dict["tweet_id"])
+        tweet_dict["created_at"] = str(tweet_dict["created_at"])
+        tweet_dict["updated_at"] = str(tweet_dict["updated_at"])
+        tweet_dict["by"]["user_id"] = str(tweet_dict["by"]["user_id"])    # Aqui accedemos a user_id que esta dentro de by
+        tweet_dict["by"]["birth_date"] = str(tweet_dict["by"]["birth_date"])
+        results.append(tweet_dict)
+        f.seek(0)    # Permite moverse a traves de los bites del archivo.
+        f.write(json.dumps(results))    # Transforma la lista de diccionarios en un json.
+        return tweet
 
 ### Show a tweet
 

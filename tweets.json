@@ -1,1 +1,41 @@
-[]
+[
+    {
+        "tweet_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "content": "This is the firts tweet in the history",
+        "created_at": "2022-03-21 00:50:02.661624",
+        "updated_at": "None",
+        "by": {
+            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "email": "esquias@example.com",
+            "first_name": "esquias",
+            "last_name": "martinez",
+            "birth_date": "2022-03-21"
+        }
+    },
+    {
+        "tweet_id": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
+        "content": "Mi primer dia en twiter",
+        "created_at": "2022-03-21 00:50:02.661624",
+        "updated_at": "None",
+        "by": {
+            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "email": "alexandra@example.com",
+            "first_name": "alexandra",
+            "last_name": "maribel",
+            "birth_date": "2022-03-21"
+        }
+    },
+    {
+        "tweet_id": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
+        "content": "Hoy nevo en Honduras",
+        "created_at": "2022-03-21 00:50:02.661624",
+        "updated_at": "None",
+        "by": {
+            "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "email": "luis@example.com",
+            "first_name": "luis",
+            "last_name": "cartago",
+            "birth_date": "2022-03-21"
+        }
+    }
+]
